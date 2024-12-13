@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondrian Painting</title>
+    <style>
+       
+        .frame {
+            height: 748px;
+            width: 748px;
+            /* border: 1px solid black; */
+            display: grid;
+            grid-template-columns: 320px 360px 50px;
+            grid-template-rows: 414px 296px 20px;
+            background-color: black; /* Set black background for gaps */
+            gap: 9px;
+        }
+        .red {
+            background-color: red;
+        }
+        .gray {
+            background-color: gray;
+            grid-column: span 2;
+        }
+        .gray1 {
+            background-color: gray;
+        }
+        .gray2 {
+            background-color: gray;
+        }
+        .gray3 {
+            display: grid;
+            gap: 9px;         
+        }
+        .blue{
+            
+            height: 130px;
+            background-color: rgb(7, 7, 70);
+            /* border-top: 10px solid black; */
+            border-bottom: 10px solid black;
+        }
+        .gray5{
+            height: 176px;
+            background-color: gray;
+        }
+        .gray4 {
+            background-color: gray;
+        }
+        .yellow {
+            width: 198px;
+            background-color: rgb(244, 204, 28);
+        }
+        .black {
+            width: 153px;
+            background-color: rgb(41, 40, 40);
+        }
+        .yellowblack {
+            display: flex;
+            gap: 9px;
+            background-color: black; /* Black background for flex gaps */
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="red"></div>
+        <div class="gray"></div>
+        <div class="gray1"></div>
+        <div class="gray2"></div>
+        <div class="gray3">
+            <div class="blue"></div>
+            <div class="gray5"></div>
+        </div>
+        <div class="gray4"></div>
+        <div class="yellowblack">
+            <div class="yellow"></div>
+            <div class="black"></div>
+        </div>
+    </div>
+</body>
+</html>
